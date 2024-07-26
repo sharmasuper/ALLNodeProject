@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OAuth Totrial Project</title>
 </head>
 <body>
-    <body>
-        <a href="/auth/google" class="google-btn" >
-            <p>Login with Google</p>
-        </a>
-    </body>
+    <nav>
+        <ul>
+            <% if(user){ %>
+                <li><a href="/auth/logout">Logout</a></li>
+      
+             <%}else{%>
+              <li><a href="/auth/login">Login</a></li>
+              
+             <%}%>
+              <li><a href="/">HomePage</a></li>
+              <li><a href="/profile/">profile</a></li>
+    </ul>
+    </nav>
+    <header>
+           <h1>Loging using ...</h1>
+    </header>    
+    <main>
+        <a class="google-btn" href="/auth/google">Google+</a>
+    </main>
 </body>
 </html>
+
+
+
+
+
 
